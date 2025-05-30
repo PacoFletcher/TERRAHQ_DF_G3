@@ -13,3 +13,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def home():
     return "<h1>API para TERRAHQ</h1><p>Ésta es una API.</p>"
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
